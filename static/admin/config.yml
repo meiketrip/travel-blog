@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: 你的GitHub用户名/travel-blog
+  branch: main
+media_folder: "static/img"
+public_folder: "/img"
+collections:
+  - name: posts
+    label: 旅游购票攻略文章
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "文章标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime" }
+      - { label: "是否草稿", name: "draft", widget: "boolean", default: true }
+      - { label: "正文内容", name: "body", widget: "markdown" }
