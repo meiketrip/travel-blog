@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: 你的GitHub用户名/travel-blog
+  repo: meiketrip/travel-blog
   branch: main
 media_folder: "static/img"
 public_folder: "/img"
