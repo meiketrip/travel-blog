@@ -2,14 +2,15 @@ backend:
   name: github
   repo: meiketrip/travel-blog
   branch: main
+  base_url: https://travel-blog-9mm.pages.dev
 
 media_folder: "static/img"
 public_folder: "/img"
 
 collections:
-  - name: "posts"
-    label: "游记文章"
-    folder: "content/posts"
+  - name: posts
+    label: 游记文章
+    folder: content/posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
