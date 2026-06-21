@@ -1,8 +1,8 @@
 backend:
-  name: github
+  name: git-gateway
   repo: meiketrip/travel-blog
   branch: main
-  base_url: https://travel-blog-9mm.pages.dev
+  base_url: https://singular-malasada-946bb5.netlify.app
 
 media_folder: "static/img"
 public_folder: "/img"
