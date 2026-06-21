@@ -2,18 +2,19 @@ backend:
   name: github
   repo: meiketrip/travel-blog
   branch: main
+
 media_folder: "static/img"
 public_folder: "/img"
+
 collections:
-  - name: posts
-    label: 旅游购票攻略文章
+  - name: "posts"
+    label: "游记文章"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
-    editor:
-      preview: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
-      - { label: "文章标题", name: "title", widget: "string" }
+      - { label: "标题", name: "title", widget: "string" }
       - { label: "发布日期", name: "date", widget: "datetime" }
-      - { label: "是否草稿", name: "draft", widget: "boolean", default: true }
-      - { label: "正文内容", name: "body", widget: "markdown" }
+      - { label: "封面图", name: "cover", widget: "image" }
+      - { label: "标签", name: "tags", widget: "list" }
+      - { label: "正文", name: "body", widget: "markdown" }
